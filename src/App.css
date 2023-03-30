@@ -2,15 +2,123 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.homepage {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.dropdown-options {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  min-width: 160px;
+}
+
+.dropdown:hover .dropdown-options {
+  display: block;
+}
+
+.dropdown-btn {
+  display: block;
+  padding: 10px;
+}
+
+.blue-bar {
+  background-color: #008CBA;
+  color: #fff;
+  padding: 10px;
+  margin: 20px 0;
+}
+
+.modules-page {
+  display: flex;
+}
+
+.left-bar {
+  flex: 0 0 20%;
+  background-color: #f2f2f2;
+  height: 100vh;
+}
+
+.left-bar-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  cursor: pointer;
+}
+
+.left-bar-item.active {
+  background-color: #008CBA;
+  color: #fff;
+}
+
+.right-content {
+  flex: 1;
+  padding: 20px;
+}
+
+.right-content-header {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.right-content-body {
+  margin-bottom: 20px;
+}
+
+.instructor-page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.instructor-page h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.instructor-page p {
+  font-size: 24px;
+}
+
+.nav-ul li a{
+  
+  color: #fff;
+  padding: 5px;
+  text-decoration: none;
+}
+
+.nav-ul {
+padding: 5px;
+margin: 0;
+background-color: skyblue;
+}
+
+.nav-ul li{
+  display:inline-block;
+  padding: 15px;
 }
 
 .App-header {
